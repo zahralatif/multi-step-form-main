@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -15,17 +13,6 @@
     <link rel="stylesheet" href="./style.css" />
 
     <title>Frontend Mentor | Multi-step form</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
 
   <body>
@@ -58,29 +45,26 @@
         <div id="form-overlay">
           <div class="step-1 steps-list-item active">
             <!-- Your info -->
-
             <h1>Personal info</h1>
             <p>Please provide your name, email address, and phone number.</p>
-            <label for="name-el">name</label>
+            <label for="name-el" class="name-label">name</label>
             <input
               type="text"
               class="input-focus"
               name="name"
               id="name-el"
               placeholder="e.g. Stephen King"
-              id="name"
               required
-            />
-            <label for="email-el">email address</label>
+            /> <p class="error-message"></p>
+            <label for="email-el" class="email-label">email address</label>
             <input
               type="email"
               class="input-focus"
               name="email"
               id="email-el"
               placeholder="e.g. stephenking@lorem.com"
-              id="email"
               required
-            />
+            /><p class="error-message"></p>
             <label for="phone-el" class="phone-required"
               >phone number
               <span id="phone-field-notification"
@@ -93,7 +77,6 @@
               name="phone"
               id="phone-el"
               placeholder=" e.g. +1 234 567 890"
-              id="phone"
               required
             />
             <div id="form-button-overlay">
@@ -204,14 +187,8 @@
                 <span id="change" class="change">change</span>
               </div>
               <div class="add-service-container" id="selected-add"></div>
-              <div
-                class="add-service-container"
-                id="selected-add-one"
-              ></div>
-              <div
-                class="add-service-container"
-                id="selected-add-two"
-              ></div>
+              <div class="add-service-container" id="selected-add-one"></div>
+              <div class="add-service-container" id="selected-add-two"></div>
               <div id="customize-add" class="add-service-container"></div>
             </div>
             <div class="total-container" id="total-container"></div>

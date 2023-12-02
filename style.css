@@ -195,8 +195,7 @@ label.phone-required {
 
 .taskbar>button,
 #form-button {
-    font-size: 1.2rem;
-    padding: .7em 1em;
+    padding: .7em;
     font-weight: 700;
     position: relative;
     text-transform: capitalize;
@@ -204,7 +203,7 @@ label.phone-required {
     background-color: var(--denim-blue);
     border: none;
     border-radius: 5px;
-    margin: 0 0 0 auto;
+    margin: 0 0 2px auto;
 }
 
 #form-overlay {
@@ -349,7 +348,7 @@ input:checked {
 }
 
 #price,
-#add-price {
+#addon-price {
     margin: 0 0 0 auto;
 }
 
@@ -378,8 +377,8 @@ input:checked {
     align-items: center;
 }
 
-#add-services,
-#add-price {
+#addon-services,
+#addon-price {
     font-weight: 500;
     color: var(--gray);
     font-size: 1rem;
@@ -473,7 +472,7 @@ input:checked {
         width: 65%;
         margin: 0 0 0 auto;
         top: 0;
-        padding: 2em 3.5em;
+        padding: 1em 3.5em;
         border-radius: unset;
         box-shadow: unset;
         background-color: unset;
